@@ -1,3 +1,4 @@
+/*global $ :true*/
 $(function(){
   /**get dom elem */
   var $width = $("#width"),
@@ -46,9 +47,9 @@ function FloatMul(arg1,arg2){
   var m=0; 
   try{
     m+=arg1.toString().split(".")[1].length
-  }catch(e){}
+  }catch(e){console.log("error")}
   try{
     m+=arg2.toString().split(".")[1].length
-  }catch(e){}
+  }catch(e){console.log("error")}
   return Number(arg1.toString().replace(".",""))*Number(arg2.toString().replace(".",""))/Math.pow(10,m);
 }
