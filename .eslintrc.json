@@ -13,5 +13,11 @@
         "sourceType": "module"
     },
     "rules": {
+        "no-irregular-whitespace": [
+            "error", 
+            { 
+                "skipTemplates": true 
+            }
+        ]
     }
 }

@@ -11,7 +11,7 @@ $(function(){
   $btnCal.click(clickCalc) 
   $(document).keydown(function(event){
     if(event.keyCode == 13){
-    　clickCalc();
+    clickCalc();
     }
   });
   function clickCalc(){
