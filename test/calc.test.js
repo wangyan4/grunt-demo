@@ -10,6 +10,6 @@ describe("加法函数单元测试",function(){
     expect(add(3,5)).to.be.equal(8);
   });
   it("a + b = NaN",function(){
-    expect(isNaN(add(a,b))).to.be.ok;
+    expect(isNaN(add('a','b'))).to.be.ok;
   })
 })
