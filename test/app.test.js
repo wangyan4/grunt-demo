@@ -1,9 +1,9 @@
 const expect = require('chai').expect,
       http = require('http');
 
-describe('矩形计算器 http api 接口测试', () => {
-  it('正确格式检测 ', (done) => {
-    http.get('http://localhost:8080/rectamgle?width=5&height=7'),function(){
+describe('矩形计算器 HTTP API  接口测试', () => {
+  it('正确请求格式检测 ', (done) => {
+    http.get('http://localhost:8080/rectamgle?width=5&height=7'),function(res){
       var result='';
       res.on('data',(chunk)=>{
         result+= chunk;

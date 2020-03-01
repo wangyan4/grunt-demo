@@ -6,7 +6,6 @@ http.createServer((req, res) => {
   console.log(`${req.method} ${req.url} HTTP/${req.httpVersion}`);
   console.log(req.headers);
   
-
   var addr = url.parse(req.url);
   var rect = qs.parse(addr.query);
   console.log(rect);
@@ -14,7 +13,6 @@ http.createServer((req, res) => {
     'area': Number(rect.width) * Number(rect.height),
     'perimeter': 2 * (Number(rect.width) + Number(rect.height))
   }
-
   res.end(JSON.stringify(r));
 }).listen(8080);
 
