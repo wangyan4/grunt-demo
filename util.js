@@ -1,10 +1,10 @@
-function rectangle(){
-  return{
-    "perimeter":function(width,height){
-      return 2*(width+height);
+function rectangle() {
+  return {
+    'perimeter' : function(w, h) {
+      return 2 * (Number(w) + Number(h));
     },
-    "area":function(width,height){
-      return width*height;
+    'area': function(w, h) {
+      return Number(w) * Number(h);
     }
-  }
+  };
 }

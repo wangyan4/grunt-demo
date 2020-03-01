@@ -1,11 +1,13 @@
 var expect = chai.expect;
-describe('矩形面积函数测试', () => {
-  it('area(2,10) = 20 ', () => {
+
+describe('矩形面积函数的测试', function() {
+  it('area(10, 5) = 50', function() {
     var r = rectangle();
-    expect(r.area(2,10)).to.be.equal(20);
+    expect(r.area(10, 5)).to.be.equal(50);
   });
-  it('perimeter(2,10) =  ', () => {
+
+  it('area("10", "5") = 50', function() {
     var r = rectangle();
-    expect(r.perimeter(2,10)).to.be.equal(20);
+    expect(r.area("10", "5")).to.be.equal(50);
   });
 });
