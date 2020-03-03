@@ -2,7 +2,7 @@ const http = require('http'),
       url  = require('url'),
       qs   = require('querystring');
 
-http.createServer((req, res) => {
+http.createServer(function (req, res) {
   console.log(`${req.method} ${req.url} HTTP/${req.httpVersion}`);
   console.log(req.headers);
   
