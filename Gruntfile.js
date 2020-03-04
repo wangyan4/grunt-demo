@@ -1,15 +1,16 @@
 /*global module :true*/
 module.exports = function (grunt) {
   grunt.initConfig({
-    concat: {
-      js: {
-        src: ['index.js', 'util.js'],
-        dest: 'dist/bundle.js'
+    sprite: {
+      files: {
+        src: 'icons/*.png',
+        dest: 'dist/bundle.png',
+        destCss: 'dist/sprites.css'
       }
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-spritesmith');
 
-  grunt.registerTask('default', ['concat']);
+  grunt.registerTask('default', ['sprite']);
 };

@@ -20,7 +20,8 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "grunt": "^1.0.4",
-    "grunt-mocha": "^0.4.12"
+    "grunt-mocha": "^0.4.12",
+    "grunt-spritesmith": "^6.8.0"
   },
   "dependencies": {
     "grunt-contrib-concat": "^1.0.1"
